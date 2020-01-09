@@ -1,7 +1,8 @@
 // Your code here
 class Cat {
-  constructor(name) {
+  constructor(name, sex) {
     this.name = name;
+    this.sex = sex;
   }
 
   speak() {
@@ -10,8 +11,9 @@ class Cat {
 }
 
 class Dog {
-  constructor(name) {
+  constructor(name, sex) {
     this.name = name;
+    this.sex = sex;
   }
 
   speak() {
@@ -20,13 +22,13 @@ class Dog {
 }
 
 class Bird {
-  constructor(name, gender) {
+  constructor(name, sex) {
     this.name = name;
-    this.gender = gender;
+    this.sex = sex;
   }
 
   speak() {
-    if (this.gender === "male") {
+    if (this.sex === "male") {
       return `It's me! ${this.name}, the parrot!`;
     } else {
       return `${this.name} says squawk!`;
